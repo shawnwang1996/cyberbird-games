@@ -6,4 +6,40 @@
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
    </url>
+   <url>
+      <loc>https://cyberbird.store/avenger-guard.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://cyberbird.store/magic-sort.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://cyberbird.store/traffic-jam-3d.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://cyberbird.store/plant-merge-zombie-war.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://cyberbird.store/polygon-space.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
+   <url>
+      <loc>https://cyberbird.store/cake-merge.html</loc>
+      <lastmod>2026-02-27</lastmod>
+      <changefreq>weekly</changefreq>
+      <priority>0.8</priority>
+   </url>
 </urlset>

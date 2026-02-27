@@ -5,13 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Play Avenger Guard, the ultimate merge defense game. Merge heroes to unlock power, fortify defenses, and take vengeance. Lead your legendary squad to repel waves of enemies."
+      content="Play free online HTML5 games at Cyberbird. No downloads required. Enjoy Avenger Guard, Magic Sort, Traffic Jam 3D, and more on any device."
     />
     <meta
       name="keywords"
-      content="Avenger Guard, defense game, strategy game, HTML5 game, online game, browser game, free game, cyberbird.store, merge game, hero battle"
+      content="HTML5 games, free online games, browser games, Cyberbird, Avenger Guard, Magic Sort, Traffic Jam 3D, puzzle games, strategy games, arcade games"
     />
-    <meta name="author" content="Avenger Guard Team" />
+    <meta name="author" content="Cyberbird Team" />
     <meta name="robots" content="index, follow" />
 
     <!-- Canonical URL -->
@@ -20,14 +20,14 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://cyberbird.store/" />
-    <meta property="og:title" content="Avenger Guard - Defend Your Homeland" />
+    <meta property="og:title" content="Cyberbird - Free Online HTML5 Games" />
     <meta
       property="og:description"
-      content="Dark forces have destroyed your homeland—rise as the Avenger Guard! Merge heroes, unlock power, and take vengeance. Play now for free!"
+      content="Your ultimate destination for free HTML5 games. No downloads, no installation, just play."
     />
     <meta
       property="og:image"
-      content="https://cyberbird.store/assets/og-image.jpg"
+      content="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
     />
 
     <!-- Twitter -->
@@ -35,18 +35,18 @@
     <meta property="twitter:url" content="https://cyberbird.store/" />
     <meta
       property="twitter:title"
-      content="Avenger Guard - Defend Your Homeland"
+      content="Cyberbird - Free Online HTML5 Games"
     />
     <meta
       property="twitter:description"
-      content="Dark forces have destroyed your homeland—rise as the Avenger Guard! Merge heroes, unlock power, and take vengeance. Play now for free!"
+      content="Your ultimate destination for free HTML5 games. No downloads, no installation, just play."
     />
     <meta
       property="twitter:image"
-      content="https://cyberbird.store/assets/og-image.jpg"
+      content="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
     />
 
-    <title>Avenger Guard - Defend Your Homeland</title>
+    <title>Cyberbird - Free Online HTML5 Games</title>
 
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -130,34 +130,12 @@
           );
       }
 
-      .iframe-container {
-        position: relative;
-        width: 100%;
-        padding-bottom: 75%; /* 4:3 Aspect Ratio (800x600) */
-        height: 0;
-        overflow: hidden;
-        border-radius: 16px;
-        box-shadow:
-          0 0 30px rgba(0, 243, 255, 0.2),
-          0 0 60px rgba(255, 0, 255, 0.1);
-        border: 2px solid rgba(0, 243, 255, 0.3);
+      .game-card {
         transition: all 0.3s ease;
       }
-
-      .iframe-container:hover {
-        box-shadow:
-          0 0 40px rgba(0, 243, 255, 0.4),
-          0 0 80px rgba(255, 0, 255, 0.2);
-        border-color: rgba(0, 243, 255, 0.8);
-        transform: scale(1.01);
-      }
-
-      .iframe-container iframe {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
+      .game-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(0, 243, 255, 0.3);
       }
 
       .glass-panel {
@@ -235,26 +213,24 @@
             <span
               class="text-2xl font-bold tracking-widest text-white font-sans neon-text group-hover:text-cyber-primary transition-colors"
             >
-              AVENGER<span class="text-cyber-secondary neon-text-red"
-                >GUARD</span
-              >
+              CYBER<span class="text-cyber-secondary neon-text-red">BIRD</span>
             </span>
           </div>
           <div class="hidden sm:flex space-x-8">
             <a
-              href="#game"
-              class="text-sm font-bold uppercase tracking-wider text-cyber-muted hover:text-cyber-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]"
-              >Play</a
+              href="#"
+              class="text-sm font-bold uppercase tracking-wider text-cyber-primary transition-colors hover:drop-shadow-[0_0_8px_rgba(0,243,255,0.8)]"
+              >Home</a
+            >
+            <a
+              href="#games"
+              class="text-sm font-bold uppercase tracking-wider text-cyber-muted hover:text-cyber-secondary transition-colors hover:drop-shadow-[0_0_8px_rgba(255,0,255,0.8)]"
+              >Games</a
             >
             <a
               href="#about"
-              class="text-sm font-bold uppercase tracking-wider text-cyber-muted hover:text-cyber-secondary transition-colors hover:drop-shadow-[0_0_8px_rgba(255,0,255,0.8)]"
-              >About</a
-            >
-            <a
-              href="#features"
               class="text-sm font-bold uppercase tracking-wider text-cyber-muted hover:text-cyber-accent transition-colors hover:drop-shadow-[0_0_8px_rgba(255,0,255,0.8)]"
-              >Features</a
+              >About</a
             >
           </div>
           <!-- Mobile Menu Button -->
@@ -297,31 +273,26 @@
       </div>
 
       <div class="max-w-5xl mx-auto relative z-10">
-        <div
-          class="inline-block mb-4 px-4 py-1 rounded-full border border-cyber-primary/30 bg-cyber-primary/10 text-cyber-primary text-xs font-bold tracking-widest uppercase animate-float"
-        >
-          New: Epic Revenge Storyline
-        </div>
         <h1
           class="text-5xl sm:text-7xl md:text-8xl font-black tracking-tighter text-white mb-6 font-sans"
         >
-          <span class="block neon-text mb-2">AVENGER</span>
+          <span class="block neon-text mb-2">CYBER</span>
           <span
             class="block text-transparent bg-clip-text bg-gradient-to-r from-cyber-secondary to-cyber-accent neon-text-red"
-            >GUARD</span
+            >BIRD</span
           >
         </h1>
         <p
           class="text-lg sm:text-xl text-cyber-muted font-light max-w-2xl mx-auto leading-relaxed mb-10"
         >
-          Dark forces have destroyed your homeland. <br />
+          Your ultimate destination for free HTML5 games. <br />
           <span class="text-white font-medium"
-            >Merge heroes, unlock power, and take vengeance.</span
+            >No downloads, no installation, just play.</span
           >
         </p>
         <div class="flex flex-col sm:flex-row justify-center gap-4">
           <a
-            href="#game"
+            href="#games"
             class="cyber-button inline-flex items-center justify-center px-8 py-4 border-0 text-base font-bold uppercase tracking-widest rounded bg-gradient-to-r from-cyber-primary to-cyber-secondary text-white hover:shadow-[0_0_30px_rgba(0,243,255,0.6)] transform hover:-translate-y-1"
           >
             <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 20 20">
@@ -329,13 +300,7 @@
                 d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
               ></path>
             </svg>
-            Start Battle
-          </a>
-          <a
-            href="#about"
-            class="cyber-button inline-flex items-center justify-center px-8 py-4 border border-cyber-primary/50 text-base font-bold uppercase tracking-widest rounded bg-transparent text-cyber-primary hover:bg-cyber-primary/10 hover:shadow-[0_0_20px_rgba(0,243,255,0.3)]"
-          >
-            Mission Briefing
+            Start Playing
           </a>
         </div>
       </div>
@@ -343,233 +308,192 @@
 
     <!-- Main Content -->
     <main class="flex-grow">
-      <!-- Game Section -->
-      <section id="game" class="py-12 px-4 sm:px-6 lg:px-8 relative">
-        <div class="max-w-6xl mx-auto">
-          <!-- Game Container Wrapper with Glow -->
-          <div
-            class="relative rounded-2xl p-1 bg-gradient-to-br from-cyber-primary via-cyber-secondary to-cyber-accent animate-glow"
-          >
-            <div class="iframe-container bg-black rounded-xl">
-              <iframe
-                src="https://html5.gamedistribution.com/c89b6590d54245c390eb27cc7d8048c9/?gd_sdk_referrer_url=https://cyberbird.store/game"
-                width="800"
-                height="600"
-                scrolling="none"
-                frameborder="0"
-                title="Avenger Guard Game"
-                allowfullscreen
-                sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
-              >
-              </iframe>
-            </div>
-          </div>
-
-          <!-- Game Info Bar -->
-          <div
-            class="mt-6 glass-panel rounded-xl p-4 flex flex-col sm:flex-row justify-between items-center text-sm text-cyber-muted border-t border-cyber-primary/20"
-          >
-            <div class="flex items-center gap-4 mb-4 sm:mb-0">
-              <span class="flex items-center"
-                ><span
-                  class="w-2 h-2 rounded-full bg-green-500 mr-2 animate-pulse"
-                ></span
-                >Online</span
-              >
-              <span class="flex items-center"
-                ><svg
-                  class="w-4 h-4 mr-1"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M12 18h.01M8 21h8a2 2 0 002-2V5a2 2 0 00-2-2H8a2 2 0 00-2 2v14a2 2 0 002 2z"
-                  ></path>
-                </svg>
-                Mobile Compatible</span
-              >
-            </div>
-            <div class="flex gap-3">
-              <button
-                class="px-3 py-1 rounded bg-white/5 hover:bg-white/10 transition-colors text-xs uppercase tracking-wide"
-              >
-                Fullscreen
-              </button>
-              <button
-                class="px-3 py-1 rounded bg-white/5 hover:bg-white/10 transition-colors text-xs uppercase tracking-wide"
-              >
-                Share
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Stats / Features Grid -->
-      <section
-        id="features"
-        class="py-20 px-4 sm:px-6 lg:px-8 relative overflow-hidden"
-      >
-        <!-- Grid Background -->
-        <div
-          class="absolute inset-0 bg-[url('data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDAiIGhlaWdodD0iNDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PHBhdHRlcm4gaWQ9ImEiIHdpZHRoPSI0MCIgaGVpZ2h0PSI0MCIgcGF0dGVyblVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHBhdGggZD0iTTAgNDBoNDBWMEgwHYiBmaWxsPSJub25lIiBzdHJva2U9InJnYmEoMjU1LDI1NSwyNTUsMC4wMykiIHN0cm9rZS13aWR0aD0iMSIvPjwvcGF0dGVybj48L2RlZnM+PHJlY3Qgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgZmlsbD0idXJsKCNhKSIvPjwvc3ZnPg==')] opacity-30"
-        ></div>
-
-        <div class="max-w-7xl mx-auto relative z-10">
+      <!-- Games Grid -->
+      <section id="games" class="py-12 px-4 sm:px-6 lg:px-8 relative">
+        <div class="max-w-7xl mx-auto">
           <div class="text-center mb-16">
             <h2
               class="text-3xl sm:text-4xl font-black text-white font-sans mb-4 tracking-tight"
             >
-              GAME <span class="text-cyber-primary">FEATURES</span>
+              FEATURED <span class="text-cyber-primary">GAMES</span>
             </h2>
             <div
               class="h-1 w-24 bg-gradient-to-r from-cyber-primary to-transparent mx-auto"
             ></div>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <!-- Feature 1 -->
-            <div
-              class="glass-panel rounded-2xl p-8 hover:bg-cyber-card/80 transition-all duration-300 group border-t-2 border-transparent hover:border-cyber-primary"
-            >
-              <div
-                class="h-14 w-14 rounded-xl bg-cyber-primary/10 flex items-center justify-center mb-6 group-hover:bg-cyber-primary/20 transition-colors"
-              >
-                <svg
-                  class="w-8 h-8 text-cyber-primary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"
-                  ></path>
-                </svg>
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Avenger Guard -->
+            <a href="avenger-guard.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
+                    alt="Avenger Guard"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <span
+                    class="absolute top-4 right-4 z-20 px-2 py-1 bg-cyber-secondary text-white text-xs font-bold rounded"
+                    >HOT</span
+                  >
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Avenger Guard
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    Merge heroes, unlock power, and take vengeance in this epic
+                    defense game.
+                  </p>
+                </div>
               </div>
-              <h3
-                class="text-xl font-bold text-white mb-3 font-sans group-hover:text-cyber-primary transition-colors"
-              >
-                Merge & Upgrade
-              </h3>
-              <p class="text-cyber-muted leading-relaxed">
-                Merge identical heroes to unlock stronger versions with unique
-                abilities. Build the ultimate squad.
-              </p>
-            </div>
+            </a>
 
-            <!-- Feature 2 -->
-            <div
-              class="glass-panel rounded-2xl p-8 hover:bg-cyber-card/80 transition-all duration-300 group border-t-2 border-transparent hover:border-cyber-secondary"
-            >
-              <div
-                class="h-14 w-14 rounded-xl bg-cyber-secondary/10 flex items-center justify-center mb-6 group-hover:bg-cyber-secondary/20 transition-colors"
-              >
-                <svg
-                  class="w-8 h-8 text-cyber-secondary"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"
-                  ></path>
-                </svg>
+            <!-- Magic Sort -->
+            <a href="magic-sort.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1615147342761-9238e15d8b96?q=80&w=2070&auto=format&fit=crop"
+                    alt="Magic Sort"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <span
+                    class="absolute top-4 right-4 z-20 px-2 py-1 bg-cyber-primary text-black text-xs font-bold rounded"
+                    >NEW</span
+                  >
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Magic Sort
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    A relaxing color-sorting puzzle with a cute cat café twist!
+                  </p>
+                </div>
               </div>
-              <h3
-                class="text-xl font-bold text-white mb-3 font-sans group-hover:text-cyber-secondary transition-colors"
-              >
-                Strategic Defense
-              </h3>
-              <p class="text-cyber-muted leading-relaxed">
-                Place heroes strategically on the battlefield to block enemy
-                advances. Be the last line of defense.
-              </p>
-            </div>
+            </a>
 
-            <!-- Feature 3 -->
-            <div
-              class="glass-panel rounded-2xl p-8 hover:bg-cyber-card/80 transition-all duration-300 group border-t-2 border-transparent hover:border-cyber-accent"
-            >
-              <div
-                class="h-14 w-14 rounded-xl bg-cyber-accent/10 flex items-center justify-center mb-6 group-hover:bg-cyber-accent/20 transition-colors"
-              >
-                <svg
-                  class="w-8 h-8 text-cyber-accent"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
-                  ></path>
-                </svg>
+            <!-- Traffic Jam 3D -->
+            <a href="traffic-jam-3d.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1568605117036-5fe5e7bab0b7?q=80&w=2070&auto=format&fit=crop"
+                    alt="Traffic Jam 3D"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Traffic Jam 3D
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    Outrageous and thrilling racing game. Reach checkpoints on
+                    time!
+                  </p>
+                </div>
               </div>
-              <h3
-                class="text-xl font-bold text-white mb-3 font-sans group-hover:text-cyber-accent transition-colors"
-              >
-                Global Storyline
-              </h3>
-              <p class="text-cyber-muted leading-relaxed">
-                Repel all enemy waves to complete levels and uncover the revenge
-                storyline. Reclaim what's yours.
-              </p>
-            </div>
+            </a>
+
+            <!-- Plant Merge: Zombie War -->
+            <a href="plant-merge-zombie-war.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1599582522567-c6b0c2727192?q=80&w=2070&auto=format&fit=crop"
+                    alt="Plant Merge: Zombie War"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Plant Merge: Zombie War
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    Arm your garden with strategic merges to fend off relentless
+                    zombie hordes!
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Polygon Space -->
+            <a href="polygon-space.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1614726365723-49cfae96a604?q=80&w=2070&auto=format&fit=crop"
+                    alt="Polygon Space"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Polygon Space
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    Intense space shooting challenge. Fly a laser cannon and
+                    battle sci-fi shapes.
+                  </p>
+                </div>
+              </div>
+            </a>
+
+            <!-- Cake Merge -->
+            <a href="cake-merge.html" class="game-card block group">
+              <div class="glass-panel rounded-2xl overflow-hidden h-full">
+                <div class="relative h-48 overflow-hidden">
+                  <div
+                    class="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent z-10"
+                  ></div>
+                  <img
+                    src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?q=80&w=1989&auto=format&fit=crop"
+                    alt="Cake Merge"
+                    class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div class="p-6">
+                  <h3
+                    class="text-xl font-bold text-white mb-2 font-sans group-hover:text-cyber-primary transition-colors"
+                  >
+                    Cake Merge
+                  </h3>
+                  <p class="text-cyber-muted text-sm line-clamp-2">
+                    Sweet and addictive merge puzzle. Combine cakes to discover
+                    new treats!
+                  </p>
+                </div>
+              </div>
+            </a>
           </div>
         </div>
       </section>
-
-      <!-- About / Story -->
-      <article id="about" class="py-20 px-4 sm:px-6 lg:px-8 bg-black/50">
-        <div
-          class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-12"
-        >
-          <div class="w-full md:w-1/2">
-            <img
-              src="https://images.unsplash.com/photo-1542751371-adc38448a05e?q=80&w=2070&auto=format&fit=crop"
-              alt="Hero Battle"
-              class="rounded-2xl shadow-[0_0_30px_rgba(255,0,255,0.3)] border border-cyber-secondary/30 hover:scale-105 transition-transform duration-500"
-            />
-          </div>
-          <div class="w-full md:w-1/2">
-            <h2 class="text-3xl font-black text-white font-sans mb-6">
-              THE <span class="text-cyber-secondary">VENGEANCE</span>
-            </h2>
-            <div class="prose prose-invert prose-lg text-cyber-muted">
-              <p class="mb-4">
-                Rise as the
-                <span class="text-cyber-primary font-bold">Avenger Guard</span>!
-                Dark forces have destroyed your homeland, and now it's time to
-                take it back.
-              </p>
-              <p class="mb-6">
-                Lead your legendary squad to repel waves of enemies. Collect
-                resources from battles to upgrade your squad and defenses. Will
-                you be the last line of defense?
-              </p>
-              <div
-                class="p-4 border-l-4 border-cyber-primary bg-cyber-primary/5 rounded-r-lg"
-              >
-                <p class="italic text-sm text-cyber-primary">
-                  "Merge heroes. Fortify defenses. Reclaim your home."
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </article>
     </main>
 
     <!-- Footer -->
@@ -580,11 +504,11 @@
             <span
               class="text-2xl font-bold tracking-widest text-white font-sans neon-text mb-4 block"
             >
-              AVENGER<span class="text-cyber-secondary">GUARD</span>
+              CYBER<span class="text-cyber-secondary">BIRD</span>
             </span>
             <p class="text-cyber-muted max-w-sm">
-              The ultimate merge defense strategy game. Build your squad, defend
-              your territory, and achieve victory.
+              Your ultimate destination for free HTML5 games. No downloads, no
+              installation, just play.
             </p>
           </div>
           <div>
@@ -654,7 +578,7 @@
           <p
             class="text-sm text-cyber-muted text-center md:text-left mb-4 md:mb-0"
           >
-            &copy; 2024 Avenger Guard. All rights reserved.
+            &copy; 2024 Cyberbird. All rights reserved.
           </p>
           <div class="flex space-x-6">
             <a
@@ -685,20 +609,5 @@
         </div>
       </div>
     </footer>
-
-    <script>
-      // 收益保护脚本：检测 AdBlock
-      window.addEventListener("load", function () {
-        setTimeout(function () {
-          const iframe = document.querySelector("iframe");
-          // 检查 iframe 是否被拦截或高度为 0
-          if (iframe && (iframe.offsetHeight === 0 || !iframe.src)) {
-            alert(
-              "To support our game, please disable AdBlock and refresh the page! ❤️",
-            );
-          }
-        }, 5000);
-      });
-    </script>
   </body>
 </html>
