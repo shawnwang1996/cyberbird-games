@@ -1,0 +1,195 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Play Plant Merge: Zombie War on Cyberbird. Merge plants, upgrade defenses, and fend off relentless zombie hordes in this strategic tower defense game."
+    />
+    <meta
+      name="keywords"
+      content="Plant Merge: Zombie War, strategy game, merge game, zombie game, tower defense, free online game, Cyberbird"
+    />
+    <meta name="author" content="Cyberbird Team" />
+    <meta name="robots" content="index, follow" />
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://cyberbird.store/plant-merge-zombie-war.html" />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://cyberbird.store/plant-merge-zombie-war.html" />
+    <meta property="og:title" content="Plant Merge: Zombie War - Play Free on Cyberbird" />
+    <meta
+      property="og:description"
+      content="Arm your garden with strategic merges to fend off relentless zombie hordes! Will your botanical army prevail?"
+    />
+
+    <title>Plant Merge: Zombie War - Cyberbird Games</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts for Orbitron -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              cyber: {
+                bg: "#020617",
+                primary: "#00f3ff",
+                secondary: "#ff00ff",
+                accent: "#f0f",
+                card: "#1e293b",
+                text: "#e2e8f0",
+                muted: "#94a3b8",
+              },
+            },
+            fontFamily: {
+              sans: ["Orbitron", "sans-serif"],
+              body: ["Roboto", "sans-serif"],
+            },
+            animation: {
+              "pulse-slow": "pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite",
+              float: "float 6s ease-in-out infinite",
+              glow: "glow 2s ease-in-out infinite alternate",
+            },
+            keyframes: {
+              float: {
+                "0%, 100%": { transform: "translateY(0)" },
+                "50%": { transform: "translateY(-10px)" },
+              },
+              glow: {
+                from: { boxShadow: "0 0 10px #00f3ff, 0 0 20px #00f3ff" },
+                to: { boxShadow: "0 0 20px #ff00ff, 0 0 30px #ff00ff" },
+              },
+            },
+          },
+        },
+      };
+    </script>
+
+    <style>
+      ::-webkit-scrollbar { width: 10px; }
+      ::-webkit-scrollbar-track { background: #020617; }
+      ::-webkit-scrollbar-thumb { background: #00f3ff; border-radius: 5px; }
+      ::-webkit-scrollbar-thumb:hover { background: #ff00ff; }
+
+      body {
+        background-color: #020617;
+        background-image: radial-gradient(circle at 15% 50%, rgba(0, 243, 255, 0.1) 0%, transparent 25%), radial-gradient(circle at 85% 30%, rgba(255, 0, 255, 0.1) 0%, transparent 25%);
+      }
+
+      .iframe-container {
+        position: relative;
+        width: 100%;
+        padding-bottom: 75%; /* 4:3 Aspect Ratio */
+        height: 0;
+        overflow: hidden;
+        border-radius: 16px;
+        box-shadow: 0 0 30px rgba(0, 243, 255, 0.2);
+        border: 2px solid rgba(0, 243, 255, 0.3);
+      }
+
+      .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .glass-panel {
+        background: rgba(30, 41, 59, 0.7);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+      }
+
+      .neon-text {
+        text-shadow: 0 0 5px rgba(0, 243, 255, 0.7), 0 0 10px rgba(0, 243, 255, 0.5);
+      }
+    </style>
+  </head>
+  <body class="text-cyber-text font-body antialiased flex flex-col min-h-screen">
+    <!-- Navigation -->
+    <nav class="glass-panel sticky top-0 z-50 border-b border-white/10">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex justify-between h-16 items-center">
+          <a href="index.html" class="flex-shrink-0 flex items-center group cursor-pointer">
+            <div class="w-10 h-10 rounded bg-gradient-to-br from-cyber-primary to-cyber-secondary flex items-center justify-center mr-3 shadow-[0_0_15px_rgba(0,243,255,0.5)]">
+              <svg class="w-6 h-6 text-black" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+            </div>
+            <span class="text-2xl font-bold tracking-widest text-white font-sans neon-text">CYBER<span class="text-cyber-secondary">BIRD</span></span>
+          </a>
+          <div class="hidden sm:flex space-x-8">
+            <a href="index.html" class="text-sm font-bold uppercase tracking-wider text-cyber-muted hover:text-cyber-primary transition-colors">Home</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <main class="flex-grow py-12 px-4 sm:px-6 lg:px-8">
+      <div class="max-w-6xl mx-auto">
+        <h1 class="text-4xl sm:text-6xl font-black text-white mb-8 font-sans neon-text">PLANT MERGE: <span class="text-cyber-secondary">ZOMBIE WAR</span></h1>
+        
+        <!-- Game Container -->
+        <div class="relative rounded-2xl p-1 bg-gradient-to-br from-cyber-primary via-cyber-secondary to-cyber-accent animate-glow mb-12">
+          <div class="iframe-container bg-black rounded-xl">
+            <iframe
+              src="https://html5.gamedistribution.com/9190c99d4aae4e0085a6059478ee3520/?gd_sdk_referrer_url=https://cyberbird.store/plant-merge-zombie-war.html"
+              width="800"
+              height="600"
+              scrolling="none"
+              frameborder="0"
+              title="Plant Merge: Zombie War"
+              allowfullscreen
+              sandbox="allow-scripts allow-same-origin allow-popups allow-forms"
+            ></iframe>
+          </div>
+        </div>
+
+        <!-- Game Description -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-12">
+          <div class="md:col-span-2">
+            <h2 class="text-2xl font-bold text-white mb-6 font-sans border-b border-cyber-primary/30 pb-2">Description</h2>
+            <div class="prose prose-invert prose-lg text-cyber-muted">
+              <p class="mb-4">In the chaotic world of <span class="text-cyber-primary font-bold">Plant Merge: Zombie War</span>, arm your garden with strategic merges to fend off relentless zombie hordes!</p>
+              <p class="mb-4">Master upgrades, deploy special abilities, and outsmart waves of undead foes in this addictive merge-tower defense adventure. Will your botanical army prevail in the ultimate war for survival?</p>
+              <p class="italic text-cyber-secondary font-bold">"Dive in and merge your way to victory!"</p>
+            </div>
+          </div>
+          <div class="glass-panel rounded-2xl p-8 h-fit">
+            <h3 class="text-xl font-bold text-white mb-4 font-sans">Instructions</h3>
+            <ul class="text-cyber-muted space-y-2 text-sm">
+              <li>• Merge plants to crush zombie waves!</li>
+              <li>• Drag and drop identical plants to evolve them.</li>
+              <li>• Strategically place your plants for maximum defense.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="bg-black border-t border-white/10 py-8 text-center">
+      <p class="text-sm text-cyber-muted">&copy; 2024 Cyberbird. All rights reserved.</p>
+    </footer>
+
+    <script>
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          const iframe = document.querySelector("iframe");
+          if (iframe && (iframe.offsetHeight === 0 || !iframe.src)) {
+            alert("To support our game, please disable AdBlock and refresh the page! ❤️");
+          }
+        }, 5000);
+      });
+    </script>
+  </body>
+</html>
