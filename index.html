@@ -685,5 +685,20 @@
         </div>
       </div>
     </footer>
+
+    <script>
+      // 收益保护脚本：检测 AdBlock
+      window.addEventListener("load", function () {
+        setTimeout(function () {
+          const iframe = document.querySelector("iframe");
+          // 检查 iframe 是否被拦截或高度为 0
+          if (iframe && (iframe.offsetHeight === 0 || !iframe.src)) {
+            alert(
+              "To support our game, please disable AdBlock and refresh the page! ❤️",
+            );
+          }
+        }, 5000);
+      });
+    </script>
   </body>
 </html>
